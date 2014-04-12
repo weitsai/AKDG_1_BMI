@@ -4,5 +4,7 @@
     <string name="app_name">BMI</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="height">身高</string>
+    <string name="weight">體重</string>
 
 </resources>
