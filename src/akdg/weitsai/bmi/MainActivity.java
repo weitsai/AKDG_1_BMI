@@ -14,7 +14,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		 findViews();
+		findViews();
 	}
 
 	private void findViews() {
@@ -30,11 +30,11 @@ public class MainActivity extends Activity {
 	}
 
 	public void submit(View v) {
-		 String height = editHeight.getText().toString();
-		 String width = editWidth.getText().toString();
-		 if ("".equals(height) | "".equals(width)) {
-		 showEditNullToast();
-		 }
+		String height = editHeight.getText().toString();
+		String width = editWidth.getText().toString();
+		if ("".equals(height) | "".equals(width)) {
+			showEditNullToast();
+		}
 	}
 
 	private void showEditNullToast() {
