@@ -20,8 +20,8 @@
         android:id="@+id/TextView02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/edit_height"
+        android:layout_below="@+id/edit_height"
         android:text="@string/weight" />
 
     <Button
@@ -34,7 +34,7 @@
         android:text="送出" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/edit_height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/TextView01"
