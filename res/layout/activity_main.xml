@@ -31,6 +31,7 @@
         android:layout_alignLeft="@+id/edit_width"
         android:layout_alignRight="@+id/edit_width"
         android:layout_below="@+id/edit_width"
+        android:onClick="submit"
         android:text="送出" />
 
     <EditText
