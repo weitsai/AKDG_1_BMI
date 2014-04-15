@@ -28,9 +28,9 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/EditText01"
-        android:layout_alignRight="@+id/EditText01"
-        android:layout_below="@+id/EditText01"
+        android:layout_alignLeft="@+id/edit_width"
+        android:layout_alignRight="@+id/edit_width"
+        android:layout_below="@+id/edit_width"
         android:text="送出" />
 
     <EditText
@@ -45,7 +45,7 @@
     </EditText>
 
     <EditText
-        android:id="@+id/EditText01"
+        android:id="@+id/edit_width"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/TextView02"
