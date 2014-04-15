@@ -35,17 +35,6 @@
         android:text="送出" />
 
     <EditText
-        android:id="@+id/edit_height"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/TextView01"
-        android:layout_alignTop="@+id/TextView01"
-        android:ems="10"
-        android:inputType="number" >
-
-    </EditText>
-
-    <EditText
         android:id="@+id/edit_width"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,5 +42,17 @@
         android:layout_below="@+id/TextView02"
         android:ems="10"
         android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>
