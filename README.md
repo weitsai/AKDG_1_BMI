@@ -1,4 +1,4 @@
-akdg_1_ibm
+AKDG_1_BMI
 ==========
 
-Android 高雄社群第一次聚會 - IBM 範例
+Android 高雄社群第一次聚會 - BMI 範例
