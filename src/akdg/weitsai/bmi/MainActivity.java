@@ -53,8 +53,8 @@ public class MainActivity extends Activity {
 
 	/**
 	 * 
-	 * @param height
-	 * @param width
+	 * @param height String
+	 * @param width String
 	 * @return
 	 */
 	private double bmi(String height, String width) {
@@ -65,8 +65,8 @@ public class MainActivity extends Activity {
 
 	/**
 	 * 
-	 * @param height
-	 * @param width
+	 * @param height String
+	 * @param width String
 	 * @return
 	 */
 	private double bmi(double height, double width) {
