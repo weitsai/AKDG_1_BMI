@@ -1,14 +1,18 @@
 package akdg.weitsai.bmi;
 
+import java.text.NumberFormat;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	private EditText editHeight, editWidth;
+	private TextView result;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +24,7 @@ public class MainActivity extends Activity {
 	private void findViews() {
 		editHeight = (EditText) findViewById(R.id.edit_height);
 		editWidth = (EditText) findViewById(R.id.edit_width);
+		result = (TextView) findViewById(R.id.result);
 	}
 
 	@Override
@@ -35,6 +40,11 @@ public class MainActivity extends Activity {
 		if ("".equals(height) | "".equals(width)) {
 			showEditNullToast();
 		}
+		NumberFormat nf = NumberFormat.getInstance();
+		nf.setMaximumFractionDigits(2);
+		double bmi = bmi(height, width);
+		String bmiStr = nf.format(bmi);
+		result.setText(bmiStr);
 	}
 
 	private void showEditNullToast() {
@@ -42,7 +52,7 @@ public class MainActivity extends Activity {
 	}
 
 	/**
-	 *
+	 * 
 	 * @param height
 	 * @param width
 	 * @return
@@ -54,7 +64,7 @@ public class MainActivity extends Activity {
 	}
 
 	/**
-	 *
+	 * 
 	 * @param height
 	 * @param width
 	 * @return
