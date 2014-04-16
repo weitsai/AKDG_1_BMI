@@ -41,4 +41,27 @@ public class MainActivity extends Activity {
 		Toast.makeText(this, "請輸入身高和體重", Toast.LENGTH_SHORT).show();
 	}
 
+	/**
+	 *
+	 * @param height
+	 * @param width
+	 * @return
+	 */
+	private double bmi(String height, String width) {
+		double h = Double.parseDouble(height);
+		double w = Double.parseDouble(width);
+		return bmi(h, w);
+	}
+
+	/**
+	 *
+	 * @param height
+	 * @param width
+	 * @return
+	 */
+	private double bmi(double height, double width) {
+		double bmi = (width / Math.pow(height, 2)) * 10000;
+		return bmi;
+	}
+
 }
