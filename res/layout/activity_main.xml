@@ -50,9 +50,6 @@
         android:layout_alignLeft="@+id/TextView01"
         android:layout_below="@+id/TextView01"
         android:ems="10"
-        android:inputType="number" >
-
-        <requestFocus />
-    </EditText>
+        android:inputType="number" />
 
 </RelativeLayout>
